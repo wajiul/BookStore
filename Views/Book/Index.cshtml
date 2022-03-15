@@ -1,0 +1,10 @@
+﻿@inject BookStore.Repository.IBookRepository _bookRepository
+<h2 class="text-center">Top Books</h2>
+
+
+@await Component.InvokeAsync("TopBooks") 
+
+
+<div class="row justify-content-center mt-5">
+    <h3 class="badge badge-success">@_bookRepository.Talk()</h3>
+</div>

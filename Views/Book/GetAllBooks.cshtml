@@ -1,0 +1,10 @@
+﻿@model IEnumerable<BookModel>
+
+<h2 class="text-center">ALL BOOKS</h2>
+<div class="row">
+@foreach(var book in Model) {
+    
+        <partial name="_ShowBookData" model="book"/>
+}
+    </div>
+
